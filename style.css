@@ -1,0 +1,163 @@
+body{
+    min-width: 100%;
+    overflow: hidden;
+    margin: 0px;
+    
+}
+
+.info2{
+    display: none;
+}
+
+main{
+    overflow: hidden;
+    display: flex;
+}
+
+.info{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1.25rem;
+    padding-right: 2rem;
+    padding-top: 86vh;
+    font-size: 1.5626rem;
+    font-family: 'Courier New', Courier, monospace;
+    color:white;
+    text-decoration: none;
+}
+
+
+
+
+.info a {
+    text-decoration: none;
+    color:white;
+    padding-top: 3vh;    
+}
+
+
+.middletext {
+    font-size: 1.875rem;
+}
+
+.middletext{
+    transform: translate(0, -1.25%);
+}
+
+.videobg{
+     z-index: -1; 
+}
+
+.videobg {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    transform: translate(0%,-8.5%);
+    position: fixed;
+    margin: auto;
+}
+
+a{
+    transition: color 0.5s;
+    transition: font-size 0.5s ;
+}
+
+.righttext:hover {
+
+    color: red;
+    font-size: 2rem;
+}
+
+@media screen and (min-width: 1920px) {
+
+    
+    .info p{
+        font-size: 2rem;
+        }
+        .info a{
+            font-size: 2rem;
+            padding-top: 2vh;
+            }
+
+        .info{
+            
+            padding-top: 90vh;
+        } 
+        
+        .righttext:hover {
+
+            color: red;
+            font-size: 2.3rem;
+        }
+     
+        
+    
+    }
+
+    @media screen and (max-width: 1500px) {
+
+        body{
+            background-color: black;
+            background-image: url(/img/my\ website\ bgcrop.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin-top: 0px;
+            margin-left: 0px;
+            padding: 0px;
+            max-width: 100%;
+            overflow-x: hidden;
+            font-family: 'Courier New', Courier, monospace;
+            color: white;
+            
+        }
+
+        .videobg{
+            display: none;
+        }
+
+        .info{
+            display: none;
+        }
+
+        .info2{
+        display: block;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+        margin-top: 15vh;
+        font-size: 1.5rem;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        width: 100vw;
+        
+    
+        }
+
+
+
+        .info2 a{
+            margin-top: 50px;
+            text-decoration: none;
+            color: white;
+        }
+
+        h1{
+            font-family: 'Bebas Neue';
+            font-size: 5rem;
+            }
+
+        .main-page-link:hover{
+            color: red;
+            font-size: 2.3rem;
+
+
+        }
+       
+        }

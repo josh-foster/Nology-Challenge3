@@ -1,0 +1,719 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: black;
+    background-image: url(/img/my\ website\ bgcrop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-top: 0px;
+    margin-left: 0px;
+    padding: 0px;
+    max-width: 100%;
+    overflow-x: hidden;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    
+}
+
+
+.content{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    max-width: 90%;
+    margin: auto;
+}
+
+header{
+    grid-column: 1/3;
+    
+}
+
+h1{
+    font-family: 'Bebas Neue';
+    font-size: 3.5rem;
+}
+
+nav{
+    
+    background-color: white;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+nav img{
+    margin-top: 5px;
+    height: 35px;
+}
+
+
+nav a{
+    text-decoration: none;
+    color: black;  
+}
+
+.profile{
+    padding-top: 100px;
+    padding-left: 5%;
+    
+     
+}
+
+.profile img{
+    height: 25rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;  
+}
+.profile p{  
+   display: flex;
+   justify-content: center;
+   font-size: 2rem;   
+}
+
+.graphic-design-info{
+    display: flex;
+    align-items: center;     
+    
+}
+
+a{
+    transition: color 0.5s;
+    transition: font-size 0.5s ;
+}
+
+nav img{
+    transition: all .2s ease-in-out;
+}
+
+.animations{
+    grid-column: 1/3;
+   padding-bottom: 10%;
+    
+}
+
+.vidset1container{
+    height: 60vh;
+    margin-top: 15vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative; 
+    
+    
+}
+
+.imgset1{
+
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;  
+}
+
+
+.vidset1{
+    
+    display: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    z-index: 10;
+    transform: translate(-0.05%,0.3%);
+    
+}
+
+
+
+.vid1{
+    
+    opacity: 0%;
+    transition: opacity 0.25s ; 
+    
+}
+
+
+
+.vid1:hover{
+
+    opacity: 100%;  
+}
+
+.vid2{
+   
+    opacity: 0%;
+    transition: opacity 0.25s ;   
+}
+
+.vid2:hover{
+
+    opacity: 100%;
+    
+}
+
+.vid3{
+    
+    opacity: 0%;
+    transition: opacity 0.25s ;   
+}
+
+.vid3:hover{
+
+    opacity: 100%;   
+}
+
+.imgset1 img{
+    height: 400px;
+    
+}
+
+.vidset1 video{
+
+    height: 400px;
+    
+}
+
+.maths-info{
+    grid-column: 1/2;
+    
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10%;
+    
+       
+}
+
+.maths-info-wrap p{
+    font-size: 1.5rem;
+}
+.maths-animation video{
+    height: 500px;
+    
+  }
+
+.maths-animation{
+    grid-column: 2/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10%;
+    
+    
+}
+
+
+
+.chef-page{
+    margin-top: 20vh;
+    grid-column: 1/3;
+    text-align: center;
+    position: relative;
+}
+
+.chef-page img{
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    opacity: 0.3;
+    
+}
+
+.chef-page h1 {
+    position: absolute;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.club-info{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10%; 
+    
+}
+
+.club-info-wrap{
+    display: block;
+    align-items: center;
+    text-align: center;
+    
+    
+}
+
+.club-info-wrap p{
+    font-size: 1.5rem;
+    width: 80%;
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.club-animation video{
+    height: 500px;
+  }
+
+.club-animation{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10%;
+    
+}
+
+
+
+.why-im-here{
+    grid-column: 1/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.2rem;
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+
+}
+
+.why-im-here p{
+    width: 40%;
+    background-color: white;
+    color: black;
+    padding: 3%;
+    border-radius: 30px;
+    text-align: center;
+}
+
+footer{
+    grid-column: 1/3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: black;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 2vh;
+    border-radius: 50px;
+}
+
+footer a{
+    text-decoration: none;
+    font-family: 'Bebas Neue';
+    font-size: 3.5rem;
+    color: black;
+    
+}
+
+.contact-info{
+    font-size: 1.2rem;
+}
+
+.home:hover{
+    color: red;
+    font-size: 0.9rem;
+}
+
+.maths:hover{
+    color: red;
+    font-size: 0.9rem;
+}
+.chef:hover{
+    color: red;
+    font-size: 0.9rem;
+}
+.ml:hover{
+    color: red;
+    font-size: 0.9rem;
+}
+.why:hover{
+    color: red;
+    font-size: 0.9rem;
+}
+.ani:hover{
+    color: red;
+    font-size: 0.9rem;
+}
+
+@media only screen and (min-width: 1600px) {
+    h1{
+        font-size: 4rem;
+    }
+    .maths-animation video{
+        height: 600px;
+    }
+    .club-animation video{
+        height: 600px;
+    }
+
+    .profile{
+        margin-top: 10vh;
+    }
+    .graphic-design-info{
+        margin-top: 10vh;
+    }
+  }
+
+
+  
+
+  @media only screen and (max-width: 1300px) {
+    h1{
+        font-size: 3.2rem;
+    }
+
+    .profile img{
+        height: 23rem; 
+    }
+
+    .profile p{  
+        
+        font-size: 1.5rem;   
+     }
+     
+     .imgset1 img{
+        height: 300px;
+    }
+    
+    .vidset1 video{
+    
+        height: 300px;
+        
+    }
+    
+    .vidset1container{
+        height: 10vh;
+         
+        
+    }
+
+    .animations{
+        padding-bottom: 0;
+    }
+
+    .maths-info{
+        
+        margin-top: 15%;
+    }
+    .maths-animation{
+        
+        margin-top: 15%;
+    }
+    .maths-info-wrap p{
+        font-size: 1rem;
+    }
+    .maths-animation video{
+        height: 400px;
+      }
+
+      .chef-page{
+          margin-top: 10vh;
+      }
+      .club-info-wrap{
+        margin-top: 0vh;
+    }
+
+    
+    .club-info-wrap p{
+        font-size: 1rem;
+    }
+    .club-animation video{
+        height: 400px;
+      } 
+
+  }
+
+  @media only screen and (max-width: 1200px) {
+    h1{
+        font-size: 3rem;
+        
+    }
+
+    .profile img{
+        height: 20rem; 
+    }
+
+    .maths-info{
+        
+        margin-top: 20vh;
+    }
+    .maths-animation{
+        
+        margin-top: 20vh;
+    }
+     
+
+  }
+
+  
+  @media only screen and (max-width: 1100px) {
+    h1{
+        font-size: 2.75rem;
+        
+    }
+
+    .profile img{
+        height: 18rem; 
+    }
+    
+    .imgset1 img{
+        height: 250px;
+    }
+    
+    .vidset1 video{
+    
+        height: 250px;
+        
+    }
+    
+    .vidset1container{
+        height: 40vh;
+         margin-bottom: 50 px;
+        
+    }
+
+    .maths-info{
+        
+        margin-top: 10vh;
+    }
+    .maths-animation{
+        
+        margin-top: 10vh;
+    }
+     
+
+  }
+
+  @media only screen and (max-width: 1000px) {
+    h1{
+        font-size: 3.75rem;   
+    }    
+    .profile img{
+        height: 15rem; 
+    }
+
+    .graphic-design-info{
+        display: flex;
+        align-items: center;   
+        justify-content: center; 
+        padding-left: 40px;
+    }
+
+    
+.maths-info{
+    grid-column: 1/3;  
+    margin-top: 10vh;
+}
+.maths-animation{
+    grid-column: 1/3;
+    margin-top: 10vh;
+}
+
+.chef-page{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.club-info{
+    grid-column: 1/3; 
+    grid-row: 7/8; 
+    margin-top: 0;
+}
+.club-animation{
+    grid-column: 1/3;
+    margin-top: 10vh;
+}
+
+.why-im-here{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    display: block;
+    text-align: center;
+}
+
+.why-im-here p{
+    font-size: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+
+
+footer a{
+    
+    font-size: 2.8rem;
+    
+}
+    
+     
+    .maths{
+        display: none;
+    }
+    .chef{
+        display: none;
+    }
+    .ml{
+        display: none;
+    }
+    .why{
+        display: none;
+    }
+    .ani{
+        display: none;
+    }
+
+    .vid2{
+        display: none;
+    }
+
+    .img2{
+        display: none;
+    }
+
+
+
+   
+  }
+
+  @media only screen and (max-width: 600px) {
+    h1{
+        font-size: 2.75rem;
+    }
+
+    .profile img{
+        height: 15rem; 
+    }
+
+    .profile{
+        padding-top: 100px;
+        grid-column: 1/3;
+    }
+     
+    .graphic-design-info{
+        display: flex;
+        align-items: center;   
+        width: 80vw;
+       
+    }
+
+    .vidset1container{
+        margin-top: 0vh;
+        margin-bottom: 0vh;
+    }
+
+    .maths-info{
+        margin-top: 0vh;
+    }
+    
+  
+
+    .club-info{
+        grid-column: 1/3; 
+        grid-row: 8/9; 
+        margin-top: 0vh;
+    }
+
+    .why-im-here p{
+        font-size: 0.8rem;
+    }
+    footer a{
+    
+        font-size: 2.5rem;
+        
+    }
+
+    .contact-info{
+        font-size: 1rem;
+    }
+       
+
+  }
+
+ 
+  @media only screen and (max-width: 527px) {
+
+    h1{
+        font-size: 2rem;
+    }
+
+    .profile{
+        padding-top: 70px;
+        
+    }
+
+    .vid1{
+        display: none;
+    }
+
+    .img1{
+        display: none;
+    }
+    .maths-info{  
+        margin-top: 3vh;
+    }
+    .maths-animation{
+        margin-top: 9vh;
+    }
+
+    .maths-animation video{
+        height: 250px;
+      }
+
+      .chef-page{
+         margin-bottom: 0vh;
+      }
+      
+      .club-info{  
+        margin-top: 0vh;
+    }
+    .club-animation{
+        margin-top: 9vh;
+    }
+
+    .club-animation video{
+        height: 250px;
+      }
+
+      .club-info-wrap{
+          margin-top: 9vh;
+      }
+      footer a{
+    
+       display: none;
+        
+    }
+
+    footer{
+        justify-content: center;
+        text-align: center;
+    }
+
+
+      
+  }
+
+  @media only screen and (max-width: 385px) {
+
+    .graphic-design-info h1{
+        font-size: 2rem;
+    }
+
+  }
